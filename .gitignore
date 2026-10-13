@@ -1,0 +1,10 @@
+# 构建产物
+outputs/
+work/
+*.dmg
+
+# macOS
+.DS_Store
+
+# 语音引擎构建缓存
+voice-edit-update/
