@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="观看 Yike for Mac 的完整使用演示。1 分 55 秒原版录屏，包含实际朗读声音。">
+  <title>使用演示 · Yike for Mac</title>
+  <style>
+    :root { color-scheme: light; --bg: #f5f7f8; --surface: #fff; --ink: #172b34; --muted: #64747b; --line: #dce5e8; --accent: #087d85; --accent-hover: #05656c; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); }
+    a:focus-visible, button:focus-visible, video:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+    .page { width: min(1280px, calc(100% - 64px)); margin: 0 auto; padding: 38px 0 30px; }
+    .brand { display: inline-flex; align-items: center; gap: 9px; color: var(--ink); font-size: 16px; font-weight: 700; letter-spacing: -.3px; text-decoration: none; }
+    .brand-dot { width: 10px; height: 10px; background: var(--accent); border-radius: 50%; }
+    header { margin: 0 0 26px; }
+    .intro { margin: 34px 0 24px; }
+    h1 { margin: 0; font-size: clamp(28px, 4vw, 42px); line-height: 1.2; font-weight: 700; letter-spacing: -1.3px; }
+    .meta { margin: 13px 0 0; color: var(--muted); font-size: 15px; line-height: 1.7; }
+    .player { overflow: hidden; background: #10191d; border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 12px 40px #1434410d; }
+    video { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; background: #10191d; object-fit: contain; }
+    .below { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 20px; margin-top: 22px; }
+    .status { flex: 1 1 260px; margin: 10px 0 0; font-size: 14px; line-height: 1.7; color: var(--muted); }
+    .status a { text-underline-offset: 3px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 11px 16px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); color: var(--ink); font-family: inherit; font-size: 14px; font-weight: 600; line-height: 1.4; text-decoration: none; cursor: pointer; transition: background .15s ease, border-color .15s ease; }
+    .button:hover { background: var(--bg); border-color: var(--muted); }
+    .primary { border-color: var(--accent); background: var(--accent); color: #fff; }
+    .primary:hover { border-color: var(--accent-hover); background: var(--accent-hover); }
+    footer { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.7; }
+    @media (max-width: 680px) {
+      .page { width: calc(100% - 32px); padding-top: 24px; }
+      .intro { margin-top: 28px; }
+      h1 { letter-spacing: -.8px; }
+      .meta { font-size: 14px; }
+      .player { border-radius: 10px; }
+      .below { gap: 16px; }
+      .status { flex-basis: 100%; margin-top: 0; }
+      .actions { width: 100%; }
+      .button { flex: 1 1 auto; }
+      .primary { flex-basis: 100%; }
+      footer { margin-top: 28px; }
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { color-scheme: dark; --bg: #10191d; --surface: #1a282e; --ink: #edf5f6; --muted: #a5b6bd; --line: #304149; --accent: #29b6be; --accent-hover: #39c4cb; }
+      .primary { color: #08282b; }
+    }
+    @media (prefers-reduced-motion: reduce) { .button { transition: none; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <a class="brand" href="https://github.com/a17746168234-alt/Yike-for-Mac" aria-label="Yike for Mac GitHub 首页"><span class="brand-dot" aria-hidden="true"></span>Yike for Mac</a>
+      <div class="intro">
+        <h1>看看 Yike，如何帮你翻译。</h1>
+        <p class="meta" id="video-description">1 分 55 秒 · 原版录屏 · 含实际朗读声音</p>
+      </div>
+    </header>
+    <div class="player">
+      <video id="demo-video" controls playsinline preload="metadata" width="1920" height="1200" poster="screenshots/demo-video.png" aria-label="Yike for Mac 使用演示视频" aria-describedby="video-description">
+        <source src="Yike-macOS-demo.mp4" type="video/mp4">
+        你的浏览器无法播放此视频。<a href="https://github.com/a17746168234-alt/Yike-for-Mac/releases/download/v2.6.3-build85/Yike-macOS-demo.mp4">下载原版视频</a>后观看。
+      </video>
+    </div>
+    <div class="below">
+      <p class="status" id="video-status" role="status" aria-live="polite">正在加载视频信息… 也可<a href="https://github.com/a17746168234-alt/Yike-for-Mac/releases/download/v2.6.3-build85/Yike-macOS-demo.mp4">下载原版视频</a>观看。</p>
+      <nav class="actions" aria-label="视频和软件链接">
+        <button class="button primary" id="play-video" type="button" aria-controls="demo-video">播放视频</button>
+        <a class="button" id="original-download" href="https://github.com/a17746168234-alt/Yike-for-Mac/releases/download/v2.6.3-build85/Yike-macOS-demo.mp4" download="Yike-macOS-demo.mp4">下载原版视频</a>
+        <a class="button" href="https://github.com/a17746168234-alt/Yike-for-Mac/releases/latest" target="_blank" rel="noopener noreferrer">下载 Yike</a>
+        <a class="button" href="https://github.com/a17746168234-alt/Yike-for-Mac" target="_blank" rel="noopener noreferrer">GitHub 首页</a>
+      </nav>
+    </div>
+    <footer>文本翻译、图片翻译、划词翻译，以及朗读、外观和历史记录的实际操作演示。</footer>
+  </main>
+  <script>
+    (() => {
+      const video = document.getElementById('demo-video');
+      const status = document.getElementById('video-status');
+      const source = video.querySelector('source');
+      const playButton = document.getElementById('play-video');
+      const downloadUrl = document.getElementById('original-download').href;
+      const duration = () => {
+        const seconds = Number.isFinite(video.duration) && video.duration > 0 ? Math.round(video.duration) : 115;
+        return `${Math.floor(seconds / 60)} 分 ${seconds % 60} 秒`;
+      };
+      const playing = () => { status.textContent = `正在播放 · ${duration()} · 含实际朗读声音`; };
+      const ready = () => {
+        if (!video.paused && !video.ended) { playing(); return; }
+        status.textContent = `视频已就绪 · ${duration()}。点击播放开始观看，可调节音量或进入全屏。`;
+      };
+      const showFailure = (message) => {
+        status.textContent = message;
+        const link = document.createElement('a');
+        link.href = downloadUrl;
+        link.textContent = '下载原版视频';
+        status.append(link, '后观看。');
+      };
+      const failed = () => showFailure('视频暂时未能加载，请');
+      playButton.addEventListener('click', () => {
+        if (!video.paused && !video.ended) { video.pause(); return; }
+        const request = video.play();
+        if (request && typeof request.catch === 'function') {
+          request.catch(() => showFailure('播放未能开始，请再次点击「播放视频」，或'));
+        }
+      });
+      video.addEventListener('loadedmetadata', ready);
+      video.addEventListener('canplay', ready);
+      video.addEventListener('error', failed);
+      source.addEventListener('error', failed);
+      video.addEventListener('waiting', () => { status.textContent = '正在缓冲，请稍候…'; });
+      video.addEventListener('play', playing);
+      video.addEventListener('playing', () => { playButton.textContent = '暂停播放'; playing(); });
+      video.addEventListener('pause', () => {
+        playButton.textContent = !video.ended && video.currentTime > 0 ? '继续播放' : '播放视频';
+        if (!video.ended && video.readyState > 0) ready();
+      });
+      video.addEventListener('ended', () => {
+        playButton.textContent = '播放视频';
+        status.textContent = '演示播放完毕。可重新播放，或下载 Yike 体验。';
+      });
+      if (video.readyState >= 1) ready();
+    })();
+  </script>
+</body>
+</html>

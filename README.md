@@ -6,9 +6,9 @@
 
 ## 使用演示
 
-[![Yike for Mac 完整使用演示：1 分 55 秒](docs/screenshots/demo-video.png)](https://github.com/a17746168234-alt/Yike-for-Mac/releases/download/v2.6.3-build85/Yike-macOS-demo.mp4)
+[![Yike for Mac 完整使用演示：1 分 55 秒](docs/screenshots/demo-video.png)](https://a17746168234-alt.github.io/Yike-for-Mac/)
 
-**原版录屏 · 1 分 55 秒 · 含实际朗读声音**。点击封面下载原版完整视频，也可[直接下载原版视频](https://github.com/a17746168234-alt/Yike-for-Mac/releases/download/v2.6.3-build85/Yike-macOS-demo.mp4)。
+**原版录屏 · 1 分 55 秒 · 含实际朗读声音**。[在线播放](https://a17746168234-alt.github.io/Yike-for-Mac/) · [下载原版完整视频](https://github.com/a17746168234-alt/Yike-for-Mac/releases/download/v2.6.3-build85/Yike-macOS-demo.mp4)。
 
 演示支持的 6 种语言与语言交换、文字和图片翻译、原图文字及译文编辑、划词翻译浮窗、外观切换、历史记录与设置页面。
 
