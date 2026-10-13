@@ -30,6 +30,8 @@ xcrun swiftc -O -target arm64-apple-macos13.0 -parse-as-library -module-name Fan
 
 cp "$source_dir/Info.plist" "$contents_dir/Info.plist"
 cp "$source_dir/ThirdPartyNotices.txt" "$resources_dir/ThirdPartyNotices.txt"
+cp "$source_dir/EdgeTTS-LICENSE.txt" "$resources_dir/EdgeTTS-LICENSE.txt"
+cp "$source_dir/OnlineTTSService.swift" "$resources_dir/OnlineTTSService.swift"
 cp "$source_dir/UpdateInstaller.sh" "$resources_dir/UpdateInstaller.sh"
 cp "$project_dir/work/voice-edit-update/whisper.cpp/LICENSE" "$resources_dir/Whisper-LICENSE.txt"
 plutil -lint "$contents_dir/Info.plist" >/dev/null

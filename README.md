@@ -1,5 +1,7 @@
 # Yike for Mac
 
+最新版：**2.6.3（Build 85）**。[下载安装包](https://github.com/a17746168234-alt/Yike-for-Mac/releases/latest/download/Yike-macOS-arm64.dmg)。本次修复在线朗读的 HTTP 403，中文、英文及男女声的在线合成已实测通过。
+
 简洁高效的 macOS 原生翻译应用：文字翻译、图片翻译、截图翻译、语音输入，菜单栏常驻、划词即译。
 
 ## 界面预览
@@ -61,6 +63,7 @@ bash native/build.sh
 
 ```bash
 bash native/tests/run_tests.sh
+bash native/tests/run_online_tts_tests.sh
 ```
 
 ## 说明
@@ -71,3 +74,5 @@ bash native/tests/run_tests.sh
 ## 开源协议
 
 MIT，详见 [LICENSE](LICENSE)。
+
+在线语音 Sec-MS-GEC v2 校验组件参考 edge-tts（LGPLv3）。许可和修改后的源码随安装包附带，详见 [第三方声明](native/ThirdPartyNotices.txt) 和 [EdgeTTS-LICENSE.txt](native/EdgeTTS-LICENSE.txt)。完整 macOS 源码另附在每次发布的 `Yike-macOS-native-source.zip` 中。

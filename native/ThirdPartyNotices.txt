@@ -28,3 +28,14 @@ Commit: a8d002cfd879315632a579e73f0148d06959de36
 Full license is included as Whisper-LICENSE.txt in the app bundle.
 Whisper base multilingual model (downloaded separately), OpenAI, MIT license.
 https://github.com/openai/whisper
+
+
+edge-tts online speech authentication (LGPLv3)
+Copyright (c) 2014-2023 Christopher Down
+Copyright (c) 2025- rany <rany@riseup.net>
+https://github.com/rany2/edge-tts/pull/492
+The Sec-MS-GEC v2 protocol helper was adapted to Swift for Yike.
+Full license: EdgeTTS-LICENSE.txt in the app bundle.
+Modified component source: OnlineTTSService.swift in the app bundle.
+Complete native application source and build scripts accompany this local repair
+as Yike-macOS-native-source.zip.
