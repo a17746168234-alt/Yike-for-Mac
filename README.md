@@ -4,6 +4,22 @@
 
 简洁高效的 macOS 原生翻译应用：文字翻译、图片翻译、截图翻译、语音输入，菜单栏常驻、划词即译。
 
+## 界面预览
+
+<p align="center">
+  <img src="docs/screenshots/01-main-window.jpg" width="48%" alt="主界面">
+  <img src="docs/screenshots/02-engine-switch.jpg" width="48%" alt="翻译引擎切换">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/03-popup-translation.jpg" width="48%" alt="划词翻译弹窗">
+  <img src="docs/screenshots/04-image-translation.jpg" width="48%" alt="图片翻译">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/05-account-settings.jpg" width="48%" alt="账号与安全">
+</p>
+
 ## 使用演示
 
 [![Yike for Mac 完整使用演示：1 分 55 秒](docs/screenshots/demo-video.png)](https://a17746168234-alt.github.io/Yike-for-Mac/)
@@ -11,28 +27,6 @@
 **原版录屏 · 1 分 55 秒 · 含实际朗读声音**。[在线播放](https://a17746168234-alt.github.io/Yike-for-Mac/) · [下载原版完整视频](https://github.com/a17746168234-alt/Yike-for-Mac/releases/download/v2.6.3-build85/Yike-macOS-demo.mp4)。
 
 演示支持的 6 种语言与语言交换、文字和图片翻译、原图文字及译文编辑、划词翻译浮窗、外观切换、历史记录与设置页面。
-
-## 界面预览
-
-### 主界面
-
-![主界面](docs/screenshots/01-main-window.jpg)
-
-### 翻译引擎切换（Apple 系统翻译 / DeepL）
-
-![引擎切换](docs/screenshots/02-engine-switch.jpg)
-
-### 划词翻译弹窗
-
-![划词翻译](docs/screenshots/03-popup-translation.jpg)
-
-### 图片翻译（译文自然融入原图）
-
-![图片翻译](docs/screenshots/04-image-translation.jpg)
-
-### 账号与安全
-
-![账号与安全](docs/screenshots/05-account-settings.jpg)
 
 ## 功能
 
