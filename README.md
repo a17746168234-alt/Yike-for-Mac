@@ -6,15 +6,15 @@
 
 ### 主界面
 
-![主界面](docs/screenshots/01-main-window.png)
+![主界面](docs/screenshots/01-main-window.jpg)
 
 ### 翻译引擎切换（Apple 系统翻译 / DeepL）
 
-![引擎切换](docs/screenshots/02-engine-switch.png)
+![引擎切换](docs/screenshots/02-engine-switch.jpg)
 
 ### 划词翻译弹窗
 
-![划词翻译](docs/screenshots/03-popup-translation.png)
+![划词翻译](docs/screenshots/03-popup-translation.jpg)
 
 ### 图片翻译（译文自然融入原图）
 
