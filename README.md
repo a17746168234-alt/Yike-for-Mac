@@ -1,6 +1,6 @@
 # Yike for Mac
 
-最新版：**2.6.3（Build 85）**。[下载安装包](https://github.com/a17746168234-alt/Yike-for-Mac/releases/latest/download/Yike-macOS-arm64.dmg)。本次修复在线朗读的 HTTP 403，中文、英文及男女声的在线合成已实测通过。
+最新版：**2.7（Build 86）**。[下载安装包](https://github.com/a17746168234-alt/Yike-for-Mac/releases/latest/download/Yike-macOS-arm64.dmg)。本次优化菜单栏操作：左键立即打开主窗口，右键或 Control＋单击显示菜单；菜单包含“打开 Yike”“Yike 设置”“截图翻译”等入口。
 
 简洁高效的 macOS 原生翻译应用：文字翻译、图片翻译、截图翻译、语音输入，菜单栏常驻、划词即译。
 

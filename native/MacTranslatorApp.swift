@@ -98,7 +98,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     private var globalHotKeyController: GlobalHotKeyController?
     private var statusItem: NSStatusItem?
     private var statusMenu: NSMenu?
-    private var pendingSingleClick: DispatchWorkItem?
     private var mainWindow: NSWindow?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
@@ -180,7 +179,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         let openItem = NSMenuItem(title: "打开 Yike", action: #selector(showMainWindow), keyEquivalent: "")
         openItem.target = self
         menu.addItem(openItem)
-        let settingsItem = NSMenuItem(title: "设置", action: #selector(openSettings), keyEquivalent: "")
+        let settingsItem = NSMenuItem(title: "Yike 设置", action: #selector(openSettings), keyEquivalent: "")
         settingsItem.target = self
         menu.addItem(settingsItem)
         let screenshotItem = NSMenuItem(title: "截图翻译", action: #selector(translateScreenshot), keyEquivalent: "")
@@ -202,14 +201,14 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     }
 
     @objc private func statusItemClicked() {
-        pendingSingleClick?.cancel()
-        if NSApp.currentEvent?.type == .rightMouseUp || (NSApp.currentEvent?.clickCount ?? 0) >= 2 {
+        guard let event = NSApp.currentEvent else { return }
+        // Left clicks open immediately; only a secondary click opens the menu.
+        // Control-click is the standard macOS alternative to a right click.
+        if event.type == .rightMouseUp || event.modifierFlags.contains(.control) {
             guard let button = statusItem?.button, let menu = statusMenu else { return }
             menu.popUp(positioning: nil, at: NSPoint(x: 0, y: button.bounds.minY), in: button)
         } else {
-            let action = DispatchWorkItem { [weak self] in self?.showMainWindow() }
-            pendingSingleClick = action
-            DispatchQueue.main.asyncAfter(deadline: .now() + NSEvent.doubleClickInterval, execute: action)
+            showMainWindow()
         }
     }
 

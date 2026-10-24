@@ -19,9 +19,9 @@
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
-    <string>2.6.3</string>
+    <string>2.7</string>
     <key>CFBundleVersion</key>
-    <string>85</string>
+    <string>86</string>
     <key>YikeTrialAPIBaseURL</key>
     <string>https://n5v1b.cn/yike-api/</string>
     <key>LSMinimumSystemVersion</key>
